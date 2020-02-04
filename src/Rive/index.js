@@ -6,7 +6,7 @@ const Rive = () => {
 	let [ animation, setAnimation ] = useState('idle')
 
 	const onClick = () => {
-		setAnimation('success')
+		setAnimation(animation === 'fail' ? 'success' : 'fail')
 	}
 
 	return (
